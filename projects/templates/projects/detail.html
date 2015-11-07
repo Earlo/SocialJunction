@@ -1,0 +1,8 @@
+
+<h1>{{ project.name }}</h1>
+<ul>
+{% for event in project.event_set.all %}
+    <li>{{ event.description }}</li>
+    <l2>{{ event.pub_date}} </l2>
+{% endfor %}
+</ul>
